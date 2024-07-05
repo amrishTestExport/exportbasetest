@@ -1,0 +1,55 @@
+{
+	"name": "READ_BY_ID",
+	"description":"Read by id",
+	"inputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"outputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "sequence":"LjttCZlOF1CEJu3RRQYa13clq",
+                        "table1":"MeBBdK36g49EHhfm1gO6pmCJK",
+                        "name":"f9zEstRIi2V2749Aj5OzHGgZ3",
+                        "department":"n4G2nIF51vZXv25eP6LhdCYv3"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/exporttables/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+				            "userName":"AppAdmin",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"GET_BY_SID",
+			           "method":"GET",
+			           "requestUrl":"/rest/exporttables/{sid}",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+			           "userName":"AppAdmin"		
+	       },
+	"outputData": [{
+                        "sequence":"LjttCZlOF1CEJu3RRQYa13clq",
+                        "table1":"MeBBdK36g49EHhfm1gO6pmCJK",
+                        "name":"f9zEstRIi2V2749Aj5OzHGgZ3",
+                        "department":"n4G2nIF51vZXv25eP6LhdCYv3"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "ExportTable":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/exporttables/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"AppAdmin"
+             }		
+	       }
+}

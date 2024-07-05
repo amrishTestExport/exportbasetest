@@ -1,0 +1,63 @@
+{
+	"name": "CREATE_UNIQUE_VALUE_FAILURE",
+	"description":"Create unique value failure",
+	"inputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"outputModelName":"",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "sequence":"XIl9vRdnEeuPqLOmY85YKoy0B",
+                        "table1":"HzJDAY95akI60x821heVYfdOh",
+                        "name":"6Ai04KWIXWFndEN00jEtrbhMh",
+                        "department":"bLGA8uPYaaVeq3ooEr4JYnVzN"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/exporttables/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+				            "userName":"AppAdmin",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"CREATE",
+			           "inputData":{
+                        "name":"6Ai04KWIXWFndEN00jEtrbhMh",
+                        "sequence":"WSWNg4x7rAzcuZs4GQdJjfRoL",
+                        "table1":"4GpH4fysrHKxLJGPAJ07BMSKA",
+                        "department":"IlLxnPmd02e8ZGcgE8Ce0ePVv"
+             },
+			           "method":"POST",
+			           "requestUrl":"/rest/exporttables/",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+			           "userName":"AppAdmin",
+			           "fileAttachmentInfo":[ 
+             ],
+			           "lookupConfiguration":{
+             }		
+	       },
+	"responseCode": 400,
+	"errorMessage":{
+                     "STATUS_CODE":500,
+                     "ERROR_CODE":"ALREADY_EXISTS",
+                     "MESSAGE":"ALREADY_EXISTS"
+           },
+	"verifyUsingService":false,
+	"tearDown":{
+			     "ExportTable":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/exporttables/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"AppAdmin"
+             }		
+	       }
+}

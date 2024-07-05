@@ -1,0 +1,45 @@
+{
+	"name": "CREATE_SUCCESS",
+	"description":"Create success",
+	"inputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"outputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"setUp":[
+	       ],
+	"requestDetails":{
+			           "serviceType":"CREATE",
+			           "inputData":{
+                        "sequence":"6MWsTZMZT1eub5SIZNeCBqgsa",
+                        "table1":"WJ5UTavvXydEACBzIuxV2gg63",
+                        "name":"Z2FDXfHnH4KZY8dJGFDXPXT0K",
+                        "department":"KRCP6NEzCu9xbAJAPoD8vbjuP"
+             },
+			           "method":"POST",
+			           "requestUrl":"/rest/exporttables/",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+			           "userName":"AppAdmin",
+			           "fileAttachmentInfo":[ 
+             ],
+			           "lookupConfiguration":{
+             }		
+	       },
+	"outputData": [{
+                        "sequence":"6MWsTZMZT1eub5SIZNeCBqgsa",
+                        "table1":"WJ5UTavvXydEACBzIuxV2gg63",
+                        "name":"Z2FDXfHnH4KZY8dJGFDXPXT0K",
+                        "department":"KRCP6NEzCu9xbAJAPoD8vbjuP"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "ExportTable":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/exporttables/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"AppAdmin"
+             }		
+	       }
+}

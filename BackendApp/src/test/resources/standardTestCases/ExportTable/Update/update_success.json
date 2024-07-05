@@ -1,0 +1,63 @@
+{
+	"name": "UPDATE_SUCCESS",
+	"description":"Update success",
+	"inputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"outputModelName":"com.vanenburgdemo.exapp.model.ExportTable",
+	"setUp":[
+			   {
+				            "serviceType":"CREATE",
+				            "inputData":{
+                        "sequence":"4NvJPJKQp6gKkOo7OfTusBsWn",
+                        "table1":"Qo4doQwPVNtle2XFR08GWSObw",
+                        "name":"yB8T0Qb0c4eYzB78ZZnxC6gau",
+                        "department":"gzQsBzRs46cAkJsmkxBmPMiL5"
+             },
+				            "method":"POST",
+				            "requestUrl":"/rest/exporttables/",
+				            "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+				            "userName":"AppAdmin",
+				            "fileAttachmentInfo":[ 
+             ],
+				            "lookupConfiguration":{
+             }
+		     }
+	       ],
+	"requestDetails":{
+			           "serviceType":"UPDATE",
+			           "inputData":{
+                        "name":"4w8dMOySSa70MCzhnLl2EF79C",
+                        "sequence":"Zm0g5PH1yHCDtGkT6Sic3slwB",
+                        "table1":"fY7jmoSHxNW9kEug5I0cQK0Zr",
+                        "department":"aPsgWcdPny1xtY3WYkDwSLvxH"
+             },
+			           "method":"PUT",
+			           "requestUrl":"/rest/exporttables/",
+			           "recordInfo":{
+                        "tableRecordNo":1,
+                        "tableName":"ExportTable"
+             },
+			           "userName":"AppAdmin",
+			           "lookupConfiguration":{
+             }		
+	       },
+	"outputData": [{
+                        "name":"4w8dMOySSa70MCzhnLl2EF79C",
+                        "sequence":"Zm0g5PH1yHCDtGkT6Sic3slwB",
+                        "table1":"fY7jmoSHxNW9kEug5I0cQK0Zr",
+                        "department":"aPsgWcdPny1xtY3WYkDwSLvxH"
+             }
+	       ],
+	"responseCode": 200,
+	"verifyUsingService":false,
+	"tearDown":{
+			     "ExportTable":{
+                        "method":"DELETE",
+                        "requestUrl":"/rest/exporttables/{ids}",
+                        "clearRecordsAfterTest":true,
+                        "userName":"AppAdmin"
+             }		
+	       }
+}
